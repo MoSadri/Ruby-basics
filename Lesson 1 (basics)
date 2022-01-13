@@ -113,21 +113,22 @@ irb :002 > 'one' + 1
 => TypeError
 
 
+TYPE CONVERSION
+------------------------------------------------
+irb :001 > '12'.to_i
+=> 12
 
+irb :002 > '4 hi there'.to_i
+=> 4
 
+irb :003 > 'hi there 4'.to_i
+=> 0
 
+irb :004 > '4'.to_f
+=> 4.0
 
+irb :005 > '4 hi there'.to_f
+=> 4.0
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+irb :006 > 'hi there 4'.to_f
+=> 0.0
