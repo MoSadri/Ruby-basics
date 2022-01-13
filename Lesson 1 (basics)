@@ -1,0 +1,44 @@
+LITERALS
+----------------------------------------------
+'Hello world' // string
+375 // integer
+3.14 // float
+true // boolan
+{ 'a' => 1, 'b' =>2 } // hash
+[ 1,2,3 ] // array
+:sym // symbol
+nil //nil
+
+
+STRINGS 
+------------------------------------------------
+"The man said 'hi' ".
+' The man said \'hi there \' '
+
+
+irb :001 >a = 'ten'
+=> "ten"
+
+irb :002 => "my favorite number is #{a}"
+=> "my favorite number is ten! "
+
+String interpolation only works within double quotes
+
+
+SYMBOLS
+------------------------------------------------
+:name
+:a_symbol
+:"suprisingly, this is a symbol"
+NOTE: symbol is used when you want to reference something like a string but don't ever intend to print it to the screen or change it.
+
+
+NUMBERS
+------------------------------------------------
+
+
+
+
+
+
+
