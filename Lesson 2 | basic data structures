@@ -1,0 +1,53 @@
+irb :001 > [1,2,3,4,5]
+=> [1,2,3,4,5]
+
+irb :001 > [1,2,3,4,5][0]
+=> 1
+
+
+irb :001 > {:dog => 'barks'}
+=> {:dog => 'barks'}
+
+irb :002 => {:dog => 'barks', :cat => 'meows', :pig => 'oinks'}
+=> {:dog => 'barks', :cat => 'meows', :pig => 'oinks'}
+
+irb :002 => {:dog => 'barks', :cat => 'meows', :pig => 'oinks'}[:cat]
+=> "meows"
+
+
+Expressions and Return
+---------------------------------------------------
+1. puts : we're telling Ruby to print something to the screen. However, puts does not return what is printed to the screen.
+
+irb :001 > puts 'stuff'
+stuff
+=> nil
+
+a = puts "stuff"
+puts a
+
+
+Exercises
+---------------------------------------------------
+irb :001 > 'John' + 'Doe'
+=> John Doe
+
+
+irb :002 > movies = { :movie_1 => 1975,
+                       :movie_2 => 1986,
+                       :movie_3 => 2001,
+                       :movie_4 => 2002}
+
+puts movie[:movie1]
+puts movie[:movie2]
+puts movie[:movie3]
+puts movie[:movie4]
+
+
+
+dates = [1975, 2004, 2013, 2001, 1981]
+puts dates[0]
+puts dates[1]
+puts dates[2]
+puts dates[3]
+puts dates[4]
