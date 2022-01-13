@@ -35,6 +35,95 @@ NOTE: symbol is used when you want to reference something like a string but don'
 
 NUMBERS
 ------------------------------------------------
+#integer and float 
+# 1,2,3 | 1.1, 1.2, 1.3
+
+
+NULL / Nill
+------------------------------------------------
+
+irb: 001> puts "hello world"
+Hello, world
+=> nill
+NOTE: puts method prints out a string and returns nothing
+
+irb: 002 > x = nill
+=> nill
+
+### check if something is nil or not ###
+irb :001 > "hi" .nill?
+=> false
+
+
+An important property of the nil type is that when used in an expression, such as an if statement, it will be treated as false,
+irb :001 > if nill
+irb :002 > puts "hello world"
+irb :003 > end
+=> nil
+
+NOTE: nil can be used within a conditional statement, and will be treated as false.
+irb :001 > false == nil
+=> false
+
+
+
+OPERATIONS
+------------------------------------------------
+# Adding, Subtracting, Multiplying integers
+irb :001 > 1 + 1
+=> 2
+irb :001 > 1 - 1
+=> 0
+irb :001 > 2 * 2
+=> 4
+irb :001 > 16 / 4
+=> 4
+irb :001 > 16 % 4
+=> 0
+
+
+irb :001 > 16.remainder(5) 
+=> 1
+
+irb :001 > 16.divmod(5)
+=> \[3, 1\]
+
+
+
+irb :001 > 4 ==4
+=> true
+
+irb :002 > 4 == 5
+=> false
+
+irb :001 > foo == 'foo'
+=> true
+
+irb :002 > 'foo' == 'bar'
+=> false
+
+irb :002 > '4' ==  4
+=> false
+
+// String concatenation
+irb :001 > '1' + '1'
+=> '11'
+
+irb :002 > 'one' + 1
+=> TypeError
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
