@@ -1,0 +1,68 @@
+Assigning values 
+---------------------------------------------
+
+irb :001 > first_name = 'Joe'
+=> "Joe"
+
+irb :002 > first_name
+=> "Joe"
+
+irb :003 > a = 7
+=> 7
+
+Getting Data from a User
+---------------------------------------------
+
+irb :001 > name = gets
+Bob
+=> "Bob\n"
+
+irb :001 > name = gets.chomp
+=> "Bob"
+
+irb :003 > name = gets.chomp
+James
+=> "James"
+
+irb :004 > name + 'is my first name'
+=> "James is super great!"
+
+
+Variable Scope
+---------------------------------------------
+name = "something"
+
+def print_full_name(first_name, last_name):
+    name = first_name + ' ' + last_na,e
+    puts name
+end
+
+print_full_name 'Peter', 'Henry'
+print_full_name 'Alex', 'Johnson'
+puts name
+
+
+
+Types of Variables
+---------------------------------------------
+CONSTANT:
+MY_CONSTANT = 'I am available throughout your app.' 
+
+GLOBAL:
+$var = 'I am also available throughout your app.'
+
+
+CLASS VARIABLE:
+@@instances = 0
+
+
+INSTANCE VARIABLE:
+@var = 'I am available throughout the current instance of this class.'
+
+LOCAL VARIABLE:
+var = 'I must be passed around to cross scope boundaries.'
+
+
+
+
+
